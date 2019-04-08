@@ -1,0 +1,26 @@
+**给定一个长度为 n+1 的数组nums，数组中所有的数均在 1∼n 的范围内，其中 n≥1,
+请找出数组中任意一个重复的数，但不能修改输入的数组 **  
+**给定 nums = [2, 3, 5, 4, 3, 2, 6, 7]。返回 2 或 3。**
+**思考题：如果只能使用 O(1) 的额外空间，该怎么做呢？**
+
+*可以用哈希表实现此类问题，空间复杂度O(n),题目要求空间复杂度为O(1)且不能改变原数组。
+代码如下:
+    def find_duplicate(nums: list) -> int:
+        def count_range(i, j):
+            return sum(i<=num<=j for num in nums)
+
+        lo = 1
+        hi = len(nums) - 1     # n为范围
+        while lo <= hi:
+            mid = (lo + hi) // 2
+            count = count_range(lo, mid)
+            if lo == hi:
+                if count > 1:
+                    return lo
+                else:
+                    break
+            if count > mid-lo+1:
+                hi = mid
+            else:
+                lo = mid + 1
+        return -1
