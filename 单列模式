@@ -1,0 +1,31 @@
+#装饰器版本
+def single(cls):
+    def wrapper(*args,**kwargs):
+        single_list = {}
+        if not single_list.get(cls.__name__):
+            single_list[cls.__name__] = cls(*args,**kwargs)
+        return single_list[cls.__name__]
+    return wrapper
+
+#重写类的__new__方法
+class single():
+    __sign = False
+    __single = None
+    def __new__(cls, *args, **kwargs):
+        if not cls.__single:
+            cls.__single = object.__new__(cls)
+        return cls.__single
+
+    def __init__(self,name,sex,age):
+        if not single.__sign:
+            self.name=name
+            self.sex=sex
+            self.age=age
+            single.__sign = True
+
+    def __str__(self):
+        return '%s %s %d'%(self.name,self.sex,self.age)
+
+a=single('张隋','男',21)
+b=single('张三','女',22)
+print(a,b)
