@@ -43,7 +43,6 @@ class Solution:
         while quick.next and quick.next.next:
             slow = slow.next
             quick = quick.next.next
-        mid = slow  # 记录下中点位置 方便后面在逆序回原链表
 
         # 翻转后面的链表
         pre = self.reverse_list(slow)
