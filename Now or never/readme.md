@@ -7,3 +7,5 @@
 ## ![二叉树的后继结点](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/%E4%BA%8C%E5%8F%89%E6%A0%91%E7%9A%84%E5%90%8E%E7%BB%A7%E7%BB%93%E7%82%B9.md)
 ## ![二叉树 平衡 搜索 完全](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/%E4%BA%8C%E5%8F%89%E6%A0%91%20%E5%B9%B3%E8%A1%A1%20%E6%90%9C%E7%B4%A2%20%E5%AE%8C%E5%85%A8.md)
 ## ![LeetCode222.完全二叉树的节点个数](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/LeetCode222.完全二叉树的节点个数.md)
+## ![并查集 朋友圈和岛屿问题](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/并查集%20朋友圈和岛屿问题.md)
+## ![前缀树](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/前缀树.md)
