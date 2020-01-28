@@ -10,3 +10,4 @@
 ## ![并查集 朋友圈和岛屿问题](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/并查集%20朋友圈和岛屿问题.md)
 ## ![前缀树](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/前缀树.md)
 ## ![大小根堆及排序](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/大小根堆及排序.md)
+## ![贪心策略](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/贪心策略.md)
