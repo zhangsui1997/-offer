@@ -14,3 +14,4 @@
 ## ![动态规划](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/动态规划.md)
 ## ![滑动窗口](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/滑动窗口.md)
 ## ![单调栈](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/单调栈.md)
+## ![连续子数组和目标值问题](https://github.com/zhangsui1997/Coding-record/blob/master/Now%20or%20never/连续子数组和目标值问题.md)
