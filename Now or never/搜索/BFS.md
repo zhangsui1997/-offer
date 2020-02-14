@@ -97,3 +97,31 @@ class Solution:
                         q.append( (j,res+1) )
         return 0
 ```
+# [279. 完全平方数](https://leetcode-cn.com/problems/perfect-squares/ "279. 完全平方数")
+给定正整数 n，找到若干个完全平方数（比如 1, 4, 9, 16, ...）使得它们的和等于 n。你需要让组成和的完全平方数的个数最少。
+
+示例 1:
+
+输入: n = 12
+输出: 3
+解释: 12 = 4 + 4 + 4
+```python
+from collections import deque
+
+class Solution:
+    def numSquares(self, n: int) -> int:
+        q = deque()
+        q.append((n, 0))
+        visited = {n: 1}
+
+        while q:
+            val, step = q.popleft()
+            all_nums=[(val-i**2,step+1) for i in range(1,int(val**0.5)+1)]
+            for j in all_nums:
+                if j[0] == 0:
+                    return j[1]
+                if j[0] not in visited:
+                    visited[j[0]] = 1
+                    q.append(j)
+        return 0
+```
